@@ -1,13 +1,3 @@
-    (function(d, w, c) {
-        w.ChatraID = 'CeSgY5qHiiJe2i5Qx';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -99,3 +89,14 @@ sr.reveal(`.new__card:nth-child(3) img`, { rotate: {z: -30}, distance: 0, delay:
 
 sr.reveal(`.footer__container`, { scale: 1 })
 sr.reveal(`.favorite__card img`, { interval: 100, rotate: {z: 15}, distance: 0 })
+
+    (function(d, w, c) {
+        w.ChatraID = 'CeSgY5qHiiJe2i5Qx';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
