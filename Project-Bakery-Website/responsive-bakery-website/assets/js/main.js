@@ -31,8 +31,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const blurHeader = () =>{
    const header = document.getElementById('header')
    // When the scroll is greater than 50 viewport height, add the blur-header class to the header tag
-   this.scrollY >= 50 ? header.classList.add('blur-header') 
-                      : header.classList.remove('blur-header')
+   window.scrollY >= 50 ? header.classList.add('blur-header') 
+                        : header.classList.remove('blur-header')
 }
 window.addEventListener('scroll', blurHeader)
 
@@ -40,8 +40,8 @@ window.addEventListener('scroll', blurHeader)
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-						: scrollUp.classList.remove('show-scroll')
+	window.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+						  : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -89,14 +89,3 @@ sr.reveal(`.new__card:nth-child(3) img`, { rotate: {z: -30}, distance: 0, delay:
 
 sr.reveal(`.footer__container`, { scale: 1 })
 sr.reveal(`.favorite__card img`, { interval: 100, rotate: {z: 15}, distance: 0 })
-
-    (function(d, w, c) {
-        w.ChatraID = 'CeSgY5qHiiJe2i5Qx';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
